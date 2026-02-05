@@ -140,60 +140,60 @@ curl -X POST http://localhost:11000/scrape-browser \
 
 ```
 Trip-Flights-Scraper/
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ main.py                 # Application entry point
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ requirements.txt        # Python dependencies
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ README.md              # This file
-Ã¢â€â€š
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ src/
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
-Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ api/               # HTTP server and API handlers
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ server.py      # aiohttp server setup
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ handlers.py    # Request handlers (/sign, /scrape, /scrape-browser)
-Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ core/              # Core business logic
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ browser_manager.py     # Browser automation with zendriver
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ token_generator.py     # Token generation orchestration
-Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ services/          # Service layer
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ url_builder.py                 # URL construction
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ w_payload_service.py           # W payload generation
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ x_ctx_service.py               # X-CTX header generation
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ cookie_extractor.py            # Cookie extraction
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ flight_scraper.py              # Flight data scraping
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ flight_url_parser.py           # URL parsing
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ ubt_manager.py                 # UBT management
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ browser_response_interceptor.py # Network response interception
-Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ models/            # Data models
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ payload_models.py      # Main payload models
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ w_payload_models.py    # W payload models
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ payload_schemes.py     # Validation schemas
-Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ utils/             # Utility functions
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ payload_encoder.py     # Payload compression
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ initial_cookie.py      # Cookie handling
-Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ ubt_vid.py             # Visitor ID generation
-Ã¢â€â€š   Ã¢â€â€š
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ config/            # Configuration
-Ã¢â€â€š       Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
-Ã¢â€â€š       Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ settings.py    # App settings
-Ã¢â€â€š
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ docs/                  # Documentation and examples
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ response_tokengetter.txt
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ response_jkt_nyc_1.txt
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ ...
-Ã¢â€â€š
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ tests/                 # Unit tests (to be implemented)
-    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
-    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ test_api/
-    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ test_services/
-    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ test_models/
+├── main.py                 # Application entry point
+├── requirements.txt        # Python dependencies
+├── README.md              # This file
+│
+├── src/
+│   ├── __init__.py
+│   │
+│   ├── api/               # HTTP server and API handlers
+│   │   ├── __init__.py
+│   │   ├── server.py      # aiohttp server setup
+│   │   └── handlers.py    # Request handlers (/sign, /scrape, /scrape-browser)
+│   │
+│   ├── core/              # Core business logic
+│   │   ├── __init__.py
+│   │   ├── browser_manager.py     # Browser automation with zendriver
+│   │   └── token_generator.py     # Token generation orchestration
+│   │
+│   ├── services/          # Service layer
+│   │   ├── __init__.py
+│   │   ├── url_builder.py                 # URL construction
+│   │   ├── w_payload_service.py           # W payload generation
+│   │   ├── x_ctx_service.py               # X-CTX header generation
+│   │   ├── cookie_extractor.py            # Cookie extraction
+│   │   ├── flight_scraper.py              # Flight data scraping
+│   │   ├── flight_url_parser.py           # URL parsing
+│   │   ├── ubt_manager.py                 # UBT management
+│   │   └── browser_response_interceptor.py # Network response interception
+│   │
+│   ├── models/            # Data models
+│   │   ├── __init__.py
+│   │   ├── payload_models.py      # Main payload models
+│   │   ├── w_payload_models.py    # W payload models
+│   │   └── payload_schemes.py     # Validation schemas
+│   │
+│   ├── utils/             # Utility functions
+│   │   ├── __init__.py
+│   │   ├── payload_encoder.py     # Payload compression
+│   │   ├── initial_cookie.py      # Cookie handling
+│   │   └── ubt_vid.py             # Visitor ID generation
+│   │
+│   └── config/            # Configuration
+│       ├── __init__.py
+│       └── settings.py    # App settings
+│
+├── docs/                  # Documentation and examples
+│   ├── response_tokengetter.txt
+│   ├── response_jkt_nyc_1.txt
+│   └── ...
+│
+└── tests/                 # Unit tests (to be implemented)
+    ├── __init__.py
+    ├── test_api/
+    ├── test_services/
+    └── test_models/
 ```
 
 ## Configuration
