@@ -1,0 +1,75 @@
+{
+    "mode": 0,
+    "Head": {
+        "extension": {
+            "LowPriceSource": "searchForm",
+            "Flt_BatchId": "c3489493-d236-438a-8007-9b70ece9a892",
+            "BlockTokenTimeout": "0",
+            "full_link_time_scene": "pure_list_page",
+            "xproduct": "baggage"
+        }
+    },
+    "searchCriteria": {
+        "grade": 3,
+        "realGrade": 1,
+        "tripType": 2,
+        "journeyNo": 1,
+        "passengerInfoType": {
+            "adultCount": 1,
+            "childCount": 0,
+            "infantCount": 0
+        },
+        "journeyInfoTypes": [
+            {
+                "journeyNo": 1,
+                "departDate": "2026-01-25",
+                "departCode": "JKT",
+                "arriveCode": "PKU",
+                "departAirport": "",
+                "arriveAirport": ""
+            },
+            {
+                "journeyNo": 2,
+                "departDate": "2026-01-27",
+                "departCode": "SIN",
+                "arriveCode": "PKU",
+                "departAirport": "",
+                "arriveAirport": ""
+            }
+        ],
+        "policyId": null
+    },
+    "sortInfoType": {
+        "direction": true,
+        "orderBy": "Direct",
+        "topList": []
+    },
+    "tagList": [],
+    "flagList": [
+        "NEED_RESET_SORT",
+        "FullDataCache"
+    ],
+    "filterType": {
+        "filterFlagTypes": [],
+        "queryItemSettings": [],
+        "studentsSelectedStatus": true
+    },
+    "abtList": [
+        {
+            "abCode": "250811_IBU_wjrankol",
+            "abVersion": "A"
+        },
+        {
+            "abCode": "250806_IBU_FiltersOpt",
+            "abVersion": "A"
+        },
+        {
+            "abCode": "250812_IBU_FiltersOp2",
+            "abVersion": "A"
+        },
+        {
+            "abCode": "251023_IBU_pricetool",
+            "abVersion": "D"
+        }
+    ]
+}

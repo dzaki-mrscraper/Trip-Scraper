@@ -1,0 +1,49 @@
+{
+    "dCity": "SIN",
+    "aCity": "KUL",
+    "dDate": "2026-01-19",
+    "flightWayType": "RT",
+    "departureAirport": "",
+    "arrivalAirport": "",
+    "cabinClass": "Economy",
+    "transferType": "ANY",
+    "searchInfo": {
+        "travelerNum": {
+            "adult": 1,
+            "child": 0,
+            "infant": 0
+        }
+    },
+    "abtList": [],
+    "offSet": 30,
+    "aDate": "2026-01-21",
+    "startInterval": 2,
+    "endInterval": 2,
+    "Head": {
+        "AbTesting": "M:46,240912_IBU_jpwjo:A;M:64,241224_IBU_TOLNG:B;M:94,250109_IBU_OLFBO:D;M:79,250207_IBU_FLTOLM:D;M:59,250403_IBU_PDOOL:A;M:52,250427_IBU_TCBOL:A;M:87,250626_IBU_refresh:A;M:22,250710_IBU_meta:A;M:50,250710_IBU_automore:A;M:76,250710_IBU_stgp:D;M:83,250630_IBU_omp3:A;M:91,250716_IBU_Flightcard:A;M:9,250716_IBU_FCredesg:E;M:59,250630_IBU_BSOOL:C;M:32,250724_IBU_TooltipInt:A;M:45,250730_IBU_Load15:A;M:21,250807_IBU_sea:A;M:15,250811_IBU_wjrankol:A;M:30,250811_IBU_law:B;M:72,250806_IBU_Off2Scroll:B;M:94,250806_IBU_FiltersOpt:A;M:22,250730_IBU_OLNOHIDFE:A;M:59,250812_IBU_SDoubleCTA:C;M:18,250812_IBU_FiltersOp2:A;M:89,250924_IBU_OLYPGZ:B;M:12,251022_IBU_HoverRed:B;M:98,251031_IBU_lppg:A;M:33,251023_IBU_pricetool:E;M:61,251110_IBU_TVCOL:A;M:75,251010_IBU_mfm:A;M:26,251119_IBU_MCSearch:B;M:11,251118_IBU_XResultOpt:B;M:69,251119_IBU_MCSegDisp:C;M:15,251128_IBU_fic:B;M:71,251112_IBU_pxjygxtol:C;M:65,251124_IBU_lfp4:A;M:20,251029_IBU_GATETECH:B;M:79,251215_IBU_lfca:D;M:43,251231_IBU_lda:E;",
+        "Group": "Trip",
+        "Source": "ONLINE",
+        "Version": "3",
+        "Currency": "IDR",
+        "Locale": "en-ID",
+        "VID": "1768619153656.7b285oyMHAnV",
+        "SessionId": "1",
+        "PvId": "13",
+        "AllianceInfo": {
+            "AllianceID": 0,
+            "SID": 0,
+            "OuID": "",
+            "UseDistributionType": 1
+        },
+        "TransactionID": "1-mf-20260117103024282-WEB",
+        "ExtendFields": {
+            "PageId": "10320667452",
+            "Os": "Windows",
+            "OsVersion": "10",
+            "SpecialSupply": "",
+            "BatchedId": "f9d17ced-211d-4b1b-a4be-39dd16600ea0",
+            "flightsignature": ""
+        },
+        "ClientID": "09034138418534596454"
+    }
+}

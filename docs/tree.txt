@@ -1,0 +1,29 @@
+📦Trip-Flights-Scraper
+ ┣ 📂docs
+ ┃ ┣ 📜dump.txt
+ ┃ ┣ 📜response_botdetection.txt
+ ┃ ┣ 📜response_jkt_nyc_1.txt
+ ┃ ┣ 📜response_jkt_nyc_2.txt
+ ┃ ┣ 📜response_tokengetter.txt
+ ┃ ┣ 📜response_tokengetter2.txt
+ ┃ ┣ 📜token-input-parameter.txt
+ ┃ ┣ 📜trip-token.txt
+ ┃ ┗ 📜w-payload-source.txt
+ ┣ 📂models
+ ┃ ┣ 📂__pycache__
+ ┃ ┃ ┣ 📜payload_models.cpython-313.pyc
+ ┃ ┃ ┗ 📜w_payload_models.cpython-313.pyc
+ ┃ ┣ 📜payload_models.py
+ ┃ ┣ 📜payload_schemes.py
+ ┃ ┗ 📜w_payload_models.py
+ ┣ 📂utils
+ ┃ ┣ 📜collectPayload.js
+ ┃ ┣ 📜initial_cookie.py
+ ┃ ┗ 📜ubt_vid.py
+ ┣ 📂__pycache__
+ ┃ ┣ 📜w_payload_source.cpython-313.pyc
+ ┃ ┗ 📜x_ctx_wclient_req.cpython-313.pyc
+ ┣ 📜collectPayload.py
+ ┣ 📜tokenGetter.py
+ ┣ 📜w_payload_source.py
+ ┗ 📜x_ctx_wclient_req.py

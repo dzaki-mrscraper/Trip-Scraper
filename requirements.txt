@@ -1,0 +1,4 @@
+aiohttp>=3.9.0
+zendriver>=0.1.0
+fake-useragent>=1.4.0
+colorama>=0.4.6
